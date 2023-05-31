@@ -2,8 +2,7 @@ a = []
 b = int(input())
 c = 0
 for i in range(b):
-    c += 1
-    a.append(c)
+    a.append(i+1)
 
 print(a)
 x = int(input())
