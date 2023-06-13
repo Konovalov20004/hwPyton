@@ -1,5 +1,9 @@
-a = input().split(" ")
-# for i in range(len(a)):
-#     a[i] = list([x for x in a[i] if x == 'a'])
-a = list( i for i in range(len(a)) for x in a[i] if x == 'a')
-print(a)
+x = int(input())
+y = int(input())
+def operation(x,y):
+    a = [a for a in range(x)]
+    print(a)
+    for i in range(y):
+        b = list(map(lambda x: x * (i + 1), a))
+        print(b)
+operation(x, y)
